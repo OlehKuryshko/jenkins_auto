@@ -1,0 +1,30 @@
+variable "region" {
+  description = "Please Enter AWS Region to deploy Server"
+  default     = "us-west-2"
+}
+
+variable "availability_zone" {
+  description = "Please Enter AWS availability_zone to deploy Server"
+  default     = "us-west-2a"
+}
+
+variable "amazon_linux" {
+  description = "Please Enter AWS Amazon Linux AMI to deploy Server"
+  default     = "ami-***********8"
+}
+
+variable "amazon_ubuntu_1804_lts" {
+  description = "Please Enter AWS Amazon Linux AMI to deploy Server"
+  default     = "ami-***********"
+}
+
+variable "instance_type_free" {
+  description = "Please Enter AWS instance type to deploy Server"
+  default     = "t2.micro"
+}
+
+variable "allow_ports" {
+  description = "List of Ports to open server"
+  default     = ["80", "443", "8080"]
+}
+
